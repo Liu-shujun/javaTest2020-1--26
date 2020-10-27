@@ -2,17 +2,17 @@ package test;
 
 public class test {
 	 public static void main(String[] args) {
-		 Teacher t1=new Teacher(771,"Lili","Å®");
-		 Teacher t2=new Teacher(775,"Jack","ÄĞ");
-		 Teacher t3=new Teacher(776,"Linda","Å®");
+		 Teacher t1=new Teacher(771,"Lili","å¥³");
+		 Teacher t2=new Teacher(775,"Jack","ç”·");
+		 Teacher t3=new Teacher(776,"Linda","å¥³");
 	
-		  Student stu0 = new Student(1001,"ÕÅÈı");
-		  Student stu1 = new Student(1002,"ÀîËÄ");
-		  Student stu2 = new Student(1003,"Ğ¡Íõ");
-		  Student stu3 = new Student(1004,"Ğ¡¿×");
-		  Course cour0 = new Course(001,"¸ßÊı","½ÌÊÒ102","ÖÜ¶ş",t1);
-		  Course cour1 = new Course(002,"Ïß´ú","½ÌÊÒ112","ÖÜËÄ",t2);
-		  Course cour2 = new Course(003,"¸ÅÂÊÂÛ","½ÌÊÒ111","ÖÜÎå",t3);
+		  Student stu0 = new Student(1001,"å¼ ä¸‰","è®¡ç®—æœºç§‘å­¦ä¸æŠ€æœ¯","ç”·");
+		  Student stu1 = new Student(1002,"æå››","è‹±è¯­","å¥³");
+		  Student stu2 = new Student(1003,"å°ç‹","å¤§æ•°æ®","ç”·");
+		  Student stu3 = new Student(1004,"å°å­”","æœºæ¢°å·¥ç¨‹","ç”·");
+		  Course cour0 = new Course(001,"é«˜æ•°","æ•™å®¤102","å‘¨äºŒ",t1);
+		  Course cour1 = new Course(002,"çº¿ä»£","æ•™å®¤112","å‘¨å››",t2);
+		  Course cour2 = new Course(003,"æ¦‚ç‡è®º","æ•™å®¤111","å‘¨äº”",t3);
 		  stu0.addCourse(cour0);
 		  stu0.addCourse(cour2);
 		  stu0.addCourse(cour1);
