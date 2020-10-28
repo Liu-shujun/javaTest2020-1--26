@@ -16,6 +16,14 @@
 
 2.属性
 
-（1）教师：编号，性别，姓名，所授课程；
+（1）Teacher类：编号：id；姓名：Tname；性别：sex；所授课程：course；
 
-（2）学生：学号，姓名，性别，所选课程
+（2）Student类：学号:stuId；姓名:stuName；性别:stuSex；专业:major；所选课程:course；
+
+（3）Course类 ：编号：Cid；名字：Cname；上课地点：place；上课时间：time；授课老师：teacher；选课学生：student；
+
+（4）test类   ：定义了三位老师；四位同学；三门课程；
+
+3.编写实体类以及测试主类；在主类中实例化多个类实体，模拟学生选课以及退课操作，打印课程信息。
+
+
