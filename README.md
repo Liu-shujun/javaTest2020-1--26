@@ -34,5 +34,22 @@
 3.编写测试主类，分别设置了三位老师，四位学生，以及三门课程；
 ## 流程图
 ![](https://github.com/Liu-shujun/javaTest2020-10-26/blob/main/%E6%8D%95%E8%8E%B7.PNG) 
-
+## 核心代码
+```
+//课加入学生
+	 public boolean addStudent(Student stu){
+	  boolean flag = false;
+	  //如果学生没有选过这门课，同时课的学生还没满则执行
+	  if(!isSelectedStudent(stu)&&isNullStudent(stu)){
+	   for(int i=0;i<students.length;i++){
+	    if(students[i]==null){
+	     students[i]=stu;
+	     flag=true;
+	     break;
+	    }
+	   }
+	  }
+	  return flag;
+	 }
+```
 
