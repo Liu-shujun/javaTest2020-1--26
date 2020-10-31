@@ -35,12 +35,14 @@
 ## 流程图
 ![](https://github.com/Liu-shujun/javaTest2020-10-26/blob/main/%E6%8D%95%E8%8E%B7.PNG) 
 ## 核心代码
+代码1
 ```
 //toString()方法实现编号，姓名，性别的输出
 public String toString(){
 		 return this.id+" "+this.getTname()+" "+this.getSex()+" ";
 	 }
 ```
+代码2
 ```
 //课加入学生
 	 public boolean addStudent(Student stu){
@@ -58,4 +60,71 @@ public String toString(){
 	  return flag;
 	 }
 ``` 
+代码3
+```
+//课移除学生
+	 public boolean removeStudent(Student stu){
+	  boolean flag=false;
+	  if(isSelectedStudent(stu)){//选过这门课
+	   for(int i=0;i<students.length;i++){
+	    if(students[i]==stu){
+	     students[i]=null;
+	     flag=true;
+	     break;
+	    }
+	   }
+	  }
+	  return flag;
+	 }
+```
+代码4
+```
+ //显示选择课程的学生：
+	 public void displayStudent(){
+	  System.out.println("选择的课程："+this.Cname+"的学生有:");
+	  for(Student s:students){
+	   if(s!=null){
+	    System.out.print(s.getStuName()+" ");
+	   }
+	  }
+	  System.out.println();
+	 }
+```
+代码5
+```
+//学生选课；
+	 public boolean addCourse(Course course){
+	  boolean flag=false;
+	  if(!isSelectedCourse(course)&&isNullCourse(course)){
+	   for(int i=0;i<this.courses.length;i++){
+	    if(courses[i]==null){
+	     courses[i]=course;
+	     course.addStudent(this);//课程也要添加学生
+	     flag=true;
+	     break;
+	    }
+	   }
+	  }
+	  return flag;
+	 }
+```
+代码6
+```
+ //学生移除课程
+	 public boolean removeCourse(Course course){
+	  boolean flag=false;
+	  if(isSelectedCourse(course)){
+	   for(int i=0;i<this.courses.length;i++){
+	    if(courses[i]==course){
+	     courses[i]=null;
+	     course.removeStudent(this);//在课程中移除学生
+	     flag=true;
+	     break;
+	    }
+	   }
+	 
+	  }
+	  return flag;
+	 }
+```
 
