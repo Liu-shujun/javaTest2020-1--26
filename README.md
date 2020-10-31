@@ -36,6 +36,12 @@
 ![](https://github.com/Liu-shujun/javaTest2020-10-26/blob/main/%E6%8D%95%E8%8E%B7.PNG) 
 ## 核心代码
 ```
+//toString()方法实现编号，姓名，性别的输出
+public String toString(){
+		 return this.id+" "+this.getTname()+" "+this.getSex()+" ";
+	 }
+```
+```
 //课加入学生
 	 public boolean addStudent(Student stu){
 	  boolean flag = false;
