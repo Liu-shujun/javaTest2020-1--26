@@ -33,6 +33,6 @@
 
 3.编写测试主类，分别设置了三位老师，四位学生，以及三门课程；
 ## 流程图
-
+![(https://github.com/Liu-shujun/javaTest2020-10-26/blob/main/%E6%8D%95%E8%8E%B7.PNG)]
 
 
