@@ -127,6 +127,8 @@ public String toString(){
 	  return flag;
 	 }
 ```
+## 系统运行截图
+![](https://github.com/Liu-shujun/javaTest2020-10-26/blob/main/%E6%8D%95%E8%8E%B71.PNG)
 ## 编程感想
 
 1.充分掌握子类继承父类的用法；学会使用super()去实例化子类；
